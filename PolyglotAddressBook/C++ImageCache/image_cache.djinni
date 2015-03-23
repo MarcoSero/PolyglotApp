@@ -1,0 +1,11 @@
+image_cache = interface +c {
+
+    static create_with_path(path: string): image_cache;
+
+    cache_path(): string;
+
+    image_for_key(key: string): binary;
+
+    save_image_for_key(key: string, image_data: binary);
+
+}

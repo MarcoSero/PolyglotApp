@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62DD221346EBDF56EE8F8DC7 /* JSONDataImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD21D0FF51230D111FEA1C /* JSONDataImporter.m */; };
+		62DD237EA8A32A60DA720480 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62DD2EC3ABC56E81BFD2E716 /* Main.storyboard */; };
+		62DD238CBD0FFF3D0F4E868C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62DD2CCCE31B2A531713EA14 /* LaunchScreen.xib */; };
+		62DD25E6781D3B23D33FB15C /* store.json in Resources */ = {isa = PBXBuildFile; fileRef = 62DD25B59AD216A5C7105C78 /* store.json */; };
+		62DD293F16F841148E9C9322 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2CA96283141468A3D4B9 /* ContactTableViewCell.swift */; };
+		62DD2EB0CB04A32032016AFE /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2102FA0A949B18A313BA /* ContactsTableViewController.swift */; };
+		A905258D1ABCEAE900CA76AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A905258C1ABCEAE900CA76AB /* AppDelegate.swift */; };
+		A90525A31ABCEAE900CA76AB /* PolyglotAddressBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90525A21ABCEAE900CA76AB /* PolyglotAddressBookTests.swift */; };
+		A90525AC1ABCF02800CA76AB /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DD26E2471E9108F69D471B /* Contact.m */; };
+		A953F5E91ABF5BE100EC50D3 /* ContactsLoader.js in Resources */ = {isa = PBXBuildFile; fileRef = 62DD2E8DDC1E8B1C92EE068E /* ContactsLoader.js */; };
+		A953FEB21AC010AC00EC50D3 /* ImageCacheCppProxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = A953FB0A1AC010AC00EC50D3 /* ImageCacheCppProxy.mm */; };
+		A96B05E61AC0B45A000F6D47 /* DJIError.mm in Sources */ = {isa = PBXBuildFile; fileRef = A96B05E01AC0B45A000F6D47 /* DJIError.mm */; };
+		A96B05E91AC0B45A000F6D47 /* DJIWeakPtrWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A96B05E31AC0B45A000F6D47 /* DJIWeakPtrWrapper.mm */; };
+		A96B05F01AC0B86A000F6D47 /* image_cache_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96B05EE1AC0B86A000F6D47 /* image_cache_impl.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A905259D1ABCEAE900CA76AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A905257F1ABCEAE900CA76AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A90525861ABCEAE900CA76AB;
+			remoteInfo = PolyglotAddressBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		62DD2102FA0A949B18A313BA /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		62DD21D0FF51230D111FEA1C /* JSONDataImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONDataImporter.m; sourceTree = "<group>"; };
+		62DD22862F172277FA888D63 /* PolyglotAddressBook-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PolyglotAddressBook-Bridging-Header.h"; sourceTree = "<group>"; };
+		62DD25B59AD216A5C7105C78 /* store.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = store.json; sourceTree = "<group>"; };
+		62DD26E2471E9108F69D471B /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		62DD29256CF7FF9AC742E63A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = PolyglotAddressBook/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		62DD29B8BDCB33DF5B9D95C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = PolyglotAddressBook/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		62DD2B0D5251FAE63D656893 /* JSONDataImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONDataImporter.h; sourceTree = "<group>"; };
+		62DD2C90029A0B2782C0328B /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		62DD2CA96283141468A3D4B9 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		62DD2E8DDC1E8B1C92EE068E /* ContactsLoader.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ContactsLoader.js; sourceTree = "<group>"; };
+		A90525871ABCEAE900CA76AB /* PolyglotAddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolyglotAddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A905258B1ABCEAE900CA76AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A905258C1ABCEAE900CA76AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A905259C1ABCEAE900CA76AB /* PolyglotAddressBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolyglotAddressBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90525A11ABCEAE900CA76AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90525A21ABCEAE900CA76AB /* PolyglotAddressBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolyglotAddressBookTests.swift; sourceTree = "<group>"; };
+		A953FB071AC010AC00EC50D3 /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
+		A953FB081AC010AC00EC50D3 /* ImageCacheCppProxy+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImageCacheCppProxy+Private.h"; sourceTree = "<group>"; };
+		A953FB091AC010AC00EC50D3 /* ImageCacheCppProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCacheCppProxy.h; sourceTree = "<group>"; };
+		A953FB0A1AC010AC00EC50D3 /* ImageCacheCppProxy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageCacheCppProxy.mm; sourceTree = "<group>"; };
+		A96B05DE1AC0B45A000F6D47 /* DJICppWrapperCache+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DJICppWrapperCache+Private.h"; sourceTree = "<group>"; };
+		A96B05DF1AC0B45A000F6D47 /* DJIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIError.h; sourceTree = "<group>"; };
+		A96B05E01AC0B45A000F6D47 /* DJIError.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DJIError.mm; sourceTree = "<group>"; };
+		A96B05E11AC0B45A000F6D47 /* DJIObjcWrapperCache+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DJIObjcWrapperCache+Private.h"; sourceTree = "<group>"; };
+		A96B05E21AC0B45A000F6D47 /* DJIWeakPtrWrapper+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DJIWeakPtrWrapper+Private.h"; sourceTree = "<group>"; };
+		A96B05E31AC0B45A000F6D47 /* DJIWeakPtrWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DJIWeakPtrWrapper.mm; sourceTree = "<group>"; };
+		A96B05EE1AC0B86A000F6D47 /* image_cache_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = image_cache_impl.cpp; sourceTree = "<group>"; };
+		A96B05F21AC0B8AB000F6D47 /* image_cache.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = image_cache.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A90525841ABCEAE900CA76AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90525991ABCEAE900CA76AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62DD22D8096E9D40FBDBEA43 /* Swift Front End */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2EC3ABC56E81BFD2E716 /* Main.storyboard */,
+				62DD2CCCE31B2A531713EA14 /* LaunchScreen.xib */,
+				62DD2102FA0A949B18A313BA /* ContactsTableViewController.swift */,
+				62DD2CA96283141468A3D4B9 /* ContactTableViewCell.swift */,
+			);
+			path = "Swift Front End";
+			sourceTree = "<group>";
+		};
+		62DD26B674D8943EEEB5BFAC /* Javascript Store */ = {
+			isa = PBXGroup;
+			children = (
+				62DD25B59AD216A5C7105C78 /* store.json */,
+				62DD2E8DDC1E8B1C92EE068E /* ContactsLoader.js */,
+			);
+			path = "Javascript Store";
+			sourceTree = "<group>";
+		};
+		62DD2FB859FD37932734DEFF /* ObjC Model */ = {
+			isa = PBXGroup;
+			children = (
+				62DD2C90029A0B2782C0328B /* Contact.h */,
+				62DD26E2471E9108F69D471B /* Contact.m */,
+				62DD2B0D5251FAE63D656893 /* JSONDataImporter.h */,
+				62DD21D0FF51230D111FEA1C /* JSONDataImporter.m */,
+			);
+			path = "ObjC Model";
+			sourceTree = "<group>";
+		};
+		A905257E1ABCEAE900CA76AB = {
+			isa = PBXGroup;
+			children = (
+				A90525891ABCEAE900CA76AB /* PolyglotAddressBook */,
+				A905259F1ABCEAE900CA76AB /* PolyglotAddressBookTests */,
+				A90525881ABCEAE900CA76AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A90525881ABCEAE900CA76AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A90525871ABCEAE900CA76AB /* PolyglotAddressBook.app */,
+				A905259C1ABCEAE900CA76AB /* PolyglotAddressBookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A90525891ABCEAE900CA76AB /* PolyglotAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				A905258C1ABCEAE900CA76AB /* AppDelegate.swift */,
+				A953F5EC1AC010A900EC50D3 /* C++ImageCache */,
+				62DD22D8096E9D40FBDBEA43 /* Swift Front End */,
+				A905258A1ABCEAE900CA76AB /* Supporting Files */,
+				62DD26B674D8943EEEB5BFAC /* Javascript Store */,
+				62DD2FB859FD37932734DEFF /* ObjC Model */,
+				62DD22862F172277FA888D63 /* PolyglotAddressBook-Bridging-Header.h */,
+			);
+			path = PolyglotAddressBook;
+			sourceTree = "<group>";
+		};
+		A905258A1ABCEAE900CA76AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A905258B1ABCEAE900CA76AB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A905259F1ABCEAE900CA76AB /* PolyglotAddressBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				A90525A21ABCEAE900CA76AB /* PolyglotAddressBookTests.swift */,
+				A90525A01ABCEAE900CA76AB /* Supporting Files */,
+			);
+			path = PolyglotAddressBookTests;
+			sourceTree = "<group>";
+		};
+		A90525A01ABCEAE900CA76AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A90525A11ABCEAE900CA76AB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A953F5EC1AC010A900EC50D3 /* C++ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				A96B05ED1AC0B86A000F6D47 /* C++ Implementation */,
+				A96B05F11AC0B8AB000F6D47 /* Machine C++ */,
+				A953FB061AC010AC00EC50D3 /* Machine Obj-C++ */,
+				A96B05DD1AC0B45A000F6D47 /* djinni-objc */,
+			);
+			path = "C++ImageCache";
+			sourceTree = "<group>";
+		};
+		A953FB061AC010AC00EC50D3 /* Machine Obj-C++ */ = {
+			isa = PBXGroup;
+			children = (
+				A953FB071AC010AC00EC50D3 /* ImageCache.h */,
+				A953FB081AC010AC00EC50D3 /* ImageCacheCppProxy+Private.h */,
+				A953FB091AC010AC00EC50D3 /* ImageCacheCppProxy.h */,
+				A953FB0A1AC010AC00EC50D3 /* ImageCacheCppProxy.mm */,
+			);
+			path = "Machine Obj-C++";
+			sourceTree = "<group>";
+		};
+		A96B05DD1AC0B45A000F6D47 /* djinni-objc */ = {
+			isa = PBXGroup;
+			children = (
+				A96B05DE1AC0B45A000F6D47 /* DJICppWrapperCache+Private.h */,
+				A96B05DF1AC0B45A000F6D47 /* DJIError.h */,
+				A96B05E01AC0B45A000F6D47 /* DJIError.mm */,
+				A96B05E11AC0B45A000F6D47 /* DJIObjcWrapperCache+Private.h */,
+				A96B05E21AC0B45A000F6D47 /* DJIWeakPtrWrapper+Private.h */,
+				A96B05E31AC0B45A000F6D47 /* DJIWeakPtrWrapper.mm */,
+			);
+			name = "djinni-objc";
+			path = "djinni/support-lib/objc";
+			sourceTree = "<group>";
+		};
+		A96B05ED1AC0B86A000F6D47 /* C++ Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				A96B05EE1AC0B86A000F6D47 /* image_cache_impl.cpp */,
+			);
+			path = "C++ Implementation";
+			sourceTree = "<group>";
+		};
+		A96B05F11AC0B8AB000F6D47 /* Machine C++ */ = {
+			isa = PBXGroup;
+			children = (
+				A96B05F21AC0B8AB000F6D47 /* image_cache.hpp */,
+			);
+			path = "Machine C++";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A90525861ABCEAE900CA76AB /* PolyglotAddressBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90525A61ABCEAE900CA76AB /* Build configuration list for PBXNativeTarget "PolyglotAddressBook" */;
+			buildPhases = (
+				A90525831ABCEAE900CA76AB /* Sources */,
+				A90525841ABCEAE900CA76AB /* Frameworks */,
+				A90525851ABCEAE900CA76AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PolyglotAddressBook;
+			productName = PolyglotAddressBook;
+			productReference = A90525871ABCEAE900CA76AB /* PolyglotAddressBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A905259B1ABCEAE900CA76AB /* PolyglotAddressBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90525A91ABCEAE900CA76AB /* Build configuration list for PBXNativeTarget "PolyglotAddressBookTests" */;
+			buildPhases = (
+				A90525981ABCEAE900CA76AB /* Sources */,
+				A90525991ABCEAE900CA76AB /* Frameworks */,
+				A905259A1ABCEAE900CA76AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A905259E1ABCEAE900CA76AB /* PBXTargetDependency */,
+			);
+			name = PolyglotAddressBookTests;
+			productName = PolyglotAddressBookTests;
+			productReference = A905259C1ABCEAE900CA76AB /* PolyglotAddressBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A905257F1ABCEAE900CA76AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Marco Sero";
+				TargetAttributes = {
+					A90525861ABCEAE900CA76AB = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					A905259B1ABCEAE900CA76AB = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = A90525861ABCEAE900CA76AB;
+					};
+				};
+			};
+			buildConfigurationList = A90525821ABCEAE900CA76AB /* Build configuration list for PBXProject "PolyglotAddressBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A905257E1ABCEAE900CA76AB;
+			productRefGroup = A90525881ABCEAE900CA76AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A90525861ABCEAE900CA76AB /* PolyglotAddressBook */,
+				A905259B1ABCEAE900CA76AB /* PolyglotAddressBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A90525851ABCEAE900CA76AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A953F5E91ABF5BE100EC50D3 /* ContactsLoader.js in Resources */,
+				62DD25E6781D3B23D33FB15C /* store.json in Resources */,
+				62DD237EA8A32A60DA720480 /* Main.storyboard in Resources */,
+				62DD238CBD0FFF3D0F4E868C /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A905259A1ABCEAE900CA76AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A90525831ABCEAE900CA76AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96B05E61AC0B45A000F6D47 /* DJIError.mm in Sources */,
+				A905258D1ABCEAE900CA76AB /* AppDelegate.swift in Sources */,
+				A96B05E91AC0B45A000F6D47 /* DJIWeakPtrWrapper.mm in Sources */,
+				62DD221346EBDF56EE8F8DC7 /* JSONDataImporter.m in Sources */,
+				A90525AC1ABCF02800CA76AB /* Contact.m in Sources */,
+				A953FEB21AC010AC00EC50D3 /* ImageCacheCppProxy.mm in Sources */,
+				62DD2EB0CB04A32032016AFE /* ContactsTableViewController.swift in Sources */,
+				A96B05F01AC0B86A000F6D47 /* image_cache_impl.cpp in Sources */,
+				62DD293F16F841148E9C9322 /* ContactTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90525981ABCEAE900CA76AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90525A31ABCEAE900CA76AB /* PolyglotAddressBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A905259E1ABCEAE900CA76AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A90525861ABCEAE900CA76AB /* PolyglotAddressBook */;
+			targetProxy = A905259D1ABCEAE900CA76AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		62DD2CCCE31B2A531713EA14 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62DD29B8BDCB33DF5B9D95C5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		62DD2EC3ABC56E81BFD2E716 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62DD29256CF7FF9AC742E63A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A90525A41ABCEAE900CA76AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A90525A51ABCEAE900CA76AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A90525A71ABCEAE900CA76AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = PolyglotAddressBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PolyglotAddressBook/PolyglotAddressBook-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		A90525A81ABCEAE900CA76AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = PolyglotAddressBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PolyglotAddressBook/PolyglotAddressBook-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		A90525AA1ABCEAE900CA76AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PolyglotAddressBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PolyglotAddressBook.app/PolyglotAddressBook";
+			};
+			name = Debug;
+		};
+		A90525AB1ABCEAE900CA76AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PolyglotAddressBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PolyglotAddressBook.app/PolyglotAddressBook";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A90525821ABCEAE900CA76AB /* Build configuration list for PBXProject "PolyglotAddressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90525A41ABCEAE900CA76AB /* Debug */,
+				A90525A51ABCEAE900CA76AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90525A61ABCEAE900CA76AB /* Build configuration list for PBXNativeTarget "PolyglotAddressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90525A71ABCEAE900CA76AB /* Debug */,
+				A90525A81ABCEAE900CA76AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90525A91ABCEAE900CA76AB /* Build configuration list for PBXNativeTarget "PolyglotAddressBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90525AA1ABCEAE900CA76AB /* Debug */,
+				A90525AB1ABCEAE900CA76AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A905257F1ABCEAE900CA76AB /* Project object */;
+}

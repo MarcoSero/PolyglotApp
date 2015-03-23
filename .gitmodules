@@ -1,0 +1,3 @@
+[submodule "PolyglotAddressBook/C++ImageCache/djinni"]
+	path = PolyglotAddressBook/C++ImageCache/djinni
+	url = https://github.com/dropbox/djinni.git
