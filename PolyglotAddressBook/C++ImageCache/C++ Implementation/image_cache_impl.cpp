@@ -12,7 +12,7 @@
 
 using namespace std;
 
-shared_ptr<ImageCache> ImageCache::create_with_path(const std::string &path)
+shared_ptr<ImageCache> ImageCache::create_with_path(const string &path)
 {
     auto cache = make_shared<ImageCacheImpl>(path);
     return cache;
@@ -79,7 +79,7 @@ void ImageCacheImpl::on_disk_save_image_for_key(const string &key, const vector<
     fp.close();
 }
 
-std::string ImageCacheImpl::file_path_for_key(const string &key)
+string ImageCacheImpl::file_path_for_key(const string &key)
 {
     string filename = path + "/" + key;
     return filename;
