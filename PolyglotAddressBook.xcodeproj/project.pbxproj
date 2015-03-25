@@ -230,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A90525A61ABCEAE900CA76AB /* Build configuration list for PBXNativeTarget "PolyglotAddressBook" */;
 			buildPhases = (
+				A9E89CA81AC338BF00324CFF /* ShellScript */,
 				A90525831ABCEAE900CA76AB /* Sources */,
 				A90525841ABCEAE900CA76AB /* Frameworks */,
 				A90525851ABCEAE900CA76AB /* Resources */,
@@ -318,6 +319,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9E89CA81AC338BF00324CFF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh ./PolyglotAddressBook/C++ImageCache/run_djinni.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A90525831ABCEAE900CA76AB /* Sources */ = {
