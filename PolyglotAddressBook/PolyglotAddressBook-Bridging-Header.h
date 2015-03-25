@@ -11,7 +11,6 @@
 
 #import "Contact.h"
 #import "JSONDataImporter.h"
-#import "ImageCache.h"
 #import "ImageCacheCppProxy.h"
 
 #endif

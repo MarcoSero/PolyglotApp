@@ -8,23 +8,22 @@
 
 @implementation Contact
 
-+ (instancetype)createWithFirstName:(NSString *)firstName lastName:(NSString *)lastName imageUrl:(NSString *)imageUrl
++ (instancetype)createWithFirstName:(NSString *)firstName lastName:(NSString *)lastName
 {
     Contact *contact = [[Contact alloc] init];
     contact.firstName = firstName;
     contact.lastName = lastName;
-    contact.imageURL = [NSURL URLWithString:imageUrl];
     return contact;
+}
+
+- (NSURL *)imageURL
+{
+    return [NSURL URLWithString:self.imageUrlString];
 }
 
 - (NSString *)fullName
 {
     return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
-}
-
-- (NSString *)description
-{
-    return self.fullName;
 }
 
 @end

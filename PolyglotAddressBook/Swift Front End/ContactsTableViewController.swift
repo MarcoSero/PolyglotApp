@@ -9,11 +9,6 @@
 import UIKit
 
 extension NSFileManager {
-    class func documentsDir() -> String {
-        var paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as [String]
-        return paths[0]
-    }
-    
     class func cachesDir() -> String {
         var paths = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true) as [String]
         return paths[0]
@@ -26,21 +21,21 @@ class ContactsTableViewController: UITableViewController, UITableViewDataSource 
     let jsonImporter : JSONDataImporter = JSONDataImporter()
     let CellIdentifier = "ContactCellIdentifier"
     let urlSession = NSURLSession.sharedSession()
-    var imageCache : ImageCache!
+    
+    var imageCache : ImageCache! {
+        get {
+            let cachePath = NSFileManager.cachesDir().stringByAppendingPathComponent("image_cache");
+            NSFileManager.defaultManager().createDirectoryAtPath(cachePath, withIntermediateDirectories: false, attributes: nil, error: nil)
+            return ImageCacheCppProxy.createWithPath(cachePath)
+        }
+    }
     
     // MARK: Setup
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setup()
         self.loadContacts()
     }
     
-    private func setup() {
-        let cachePath = NSFileManager.cachesDir().stringByAppendingPathComponent("image_cache");
-        NSFileManager.defaultManager().createDirectoryAtPath(cachePath, withIntermediateDirectories: false, attributes: nil, error: nil)
-        self.imageCache = ImageCache.createWithPath(cachePath)
-    }
-
     private func loadContacts() {
         jsonImporter.loadContactsFromDisk {
             self.contacts = $0

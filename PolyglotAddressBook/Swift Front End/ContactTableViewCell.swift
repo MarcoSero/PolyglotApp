@@ -8,15 +8,17 @@ import UIKit
 class ContactTableViewCell: UITableViewCell {
     
     @IBOutlet weak var contactNameLabel: UILabel!
+    @IBOutlet weak var contactPhoneNumber: UILabel!
     @IBOutlet weak var contactImageView: UIImageView!
     var imageDownloadTask: NSURLSessionDataTask?
     
     func setup(#contact: Contact, session: NSURLSession, cache: ImageCache) {
-        self.contactNameLabel.text = contact.fullName()
+        self.contactNameLabel.text = contact.fullName
+        self.contactPhoneNumber.text = contact.phoneNumber
         
-        let cacheKey = contact.fullName()
+        let cacheKey = contact.fullName
         let cachedData = cache.imageForKey(cacheKey)
-        if (cachedData != nil && cachedData?.length != nil) {
+        if (cachedData != nil && cachedData?.length > 0) {
             self.contactImageView.image = UIImage(data: cachedData)
             return
         }

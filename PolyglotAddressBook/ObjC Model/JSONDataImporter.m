@@ -48,8 +48,8 @@
 - (void)loadJSFileInMainBundle:(NSString *)filename
 {
     NSString *filepath = [[NSBundle mainBundle] pathForResource:filename ofType:@"js"];
-    NSString *mustacheJSString = [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:nil];
-    [self.context evaluateScript:mustacheJSString];
+    NSString *jsString = [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:nil];
+    [self.context evaluateScript:jsString];
 }
 
 - (void)loadContactsFromDisk:(void (^)(NSArray *))completion

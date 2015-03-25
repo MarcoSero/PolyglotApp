@@ -11,16 +11,19 @@
 @protocol ContactJSExports <JSExport>
 @property (nonatomic, copy) NSString *firstName;
 @property (nonatomic, copy) NSString *lastName;
-@property (nonatomic, copy) NSURL *imageURL;
-+ (instancetype)createWithFirstName:(NSString *)firstName lastName:(NSString *)lastName imageUrl:(NSString *)imageUrl;
+@property (nonatomic, copy) NSString *imageUrlString;
+@property (nonatomic, copy) NSString *phoneNumber;
++ (instancetype)createWithFirstName:(NSString *)firstName lastName:(NSString *)lastName;
 @end
 
 @interface Contact : NSObject <ContactJSExports>
 
 @property (nonatomic, copy) NSString *firstName;
 @property (nonatomic, copy) NSString *lastName;
-@property (nonatomic, copy) NSURL *imageURL;
+@property (nonatomic, copy) NSString *imageUrlString;
+@property (nonatomic, copy) NSString *phoneNumber;
 
-- (NSString *)fullName;
+@property (nonatomic, copy, readonly) NSURL *imageURL;
+@property (nonatomic, copy, readonly) NSString *fullName;
 
 @end

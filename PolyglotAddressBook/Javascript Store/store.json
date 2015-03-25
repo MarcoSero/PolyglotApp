@@ -2,16 +2,19 @@
   {
       "first": "Alan",
       "last": "Turing",
-      "image_url" : "http://upload.wikimedia.org/wikipedia/en/c/c8/Alan_Turing_photo.jpg"
+      "image_url" : "http://upload.wikimedia.org/wikipedia/en/c/c8/Alan_Turing_photo.jpg",
+      "phone" : "+44 7989 123456"
   },
   {
       "first": "Ada",
       "last": "Lovelace",
-      "image_url" : "http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/440px-Ada_Lovelace_portrait.jpg"
+      "image_url" : "http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/440px-Ada_Lovelace_portrait.jpg",
+      "phone" : "+44 7243 987625"
   },
   {
       "first": "Edsger",
       "last": "Dijkstra",
-      "image_url": "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Edsger_Wybe_Dijkstra.jpg/440px-Edsger_Wybe_Dijkstra.jpg"
+      "image_url": "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Edsger_Wybe_Dijkstra.jpg/440px-Edsger_Wybe_Dijkstra.jpg",
+      "phone" : "+44 7234 342132"
   }
 ]
